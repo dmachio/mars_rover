@@ -1,6 +1,4 @@
-<h1>Rover#index</h1>
-<p>Find me in app/views/rover/index.html.erb</p>
-<p>Hello rails!</p>
+<h1>Enter input for your Mars Rover Fleet</h1>
 <%= form_for :rover_fleet, url: rover_fleet_results_path do |form| %>
 	<% if @rover_fleet.errors.any? %>
 	   <div id="error_explanation">

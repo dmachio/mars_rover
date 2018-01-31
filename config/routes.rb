@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'rover_fleet/index'
   post 'rover_fleet/result', as: 'rover_fleet_results'
 
-  get 'rover/index'
   root 'rover_fleet#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
