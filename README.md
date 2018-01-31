@@ -1,16 +1,18 @@
-== README
+## README
+
+### Dependencies
 
 Ruby version - 2.3.1
 
 Rails version - 4.2.6
 
-Set up instructions:
+### Set up instructions:
 
-* Install dependencies $ bundle install
+* Install dependencies `$ bundle install`
 
-* Start server $ bin/rails server
+* Start server `$ bin/rails server`
 
-* Run tests $ bin/rake test
+* Run tests `$ bin/rake test`
 
 * Main implementation of rover challege is in app/models/rover_fleet.rb
 
@@ -18,7 +20,7 @@ Set up instructions:
 
 * Minimalist gui is included at localhost:3000 that allows for testing
 
-MARS ROVERS
+### MARS ROVERS CHALLENGE
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
 
@@ -32,7 +34,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-Input:
+__Input:__
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -42,19 +44,24 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-Output:
+__Output:__
 
 The output for each rover should be its final co-ordinates and heading.
 
-Test Input:
+__Test Input:__
 
 5 5
+
 1 2 N
+
 LMLMLMLMM
+
 3 3 E
+
 MMRMMRMRRM
 
-Expected Output:
+__Expected Output:__
 
 1 3 N
+
 5 1 E
