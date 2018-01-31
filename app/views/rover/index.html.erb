@@ -1,0 +1,14 @@
+<h1>Rover#index</h1>
+<p>Find me in app/views/rover/index.html.erb</p>
+<p>Hello rails!</p>
+<%= form_tag @rover_fleet do |form| %>
+ 
+  <p>
+    Mars Rovers Input<br>
+    <%= form.text_area :input %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

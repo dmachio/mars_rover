@@ -1,0 +1,19 @@
+== README
+
+Ruby version - 2.3.1
+
+Rails version - 4.2.6
+
+Set up instructions:
+
+* Install dependencies $ bundle install
+
+* Start server $ bin/rails server
+
+* Run tests $ bin/rake test
+
+* Main implementation of rover challege is in app/models/rover_fleet.rb
+
+* Major tests for rover challenge are in test/models/rover_fleet_test.rb
+
+* Minimalist gui is included at localhost:3000 that allows for testing

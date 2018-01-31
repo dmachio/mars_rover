@@ -1,0 +1,23 @@
+<h1>Rover#index</h1>
+<p>Find me in app/views/rover/index.html.erb</p>
+<p>Hello rails!</p>
+<%= form_for :rover_fleet, url: rover_fleet_results_path do |form| %>
+	<% if @rover_fleet.errors.any? %>
+	   <div id="error_explanation">
+	     <h2><%= pluralize(@rover_fleet.errors.count, "error") %> prohibited these rover fleet input from being processed:</h2>
+	     <ul>
+	     <% @rover_fleet.errors.full_messages.each do |message| %>
+	       <li><%= message %></li>
+	     <% end %>
+	     </ul>
+	   </div>
+	 <% end %>
+  <p>
+    Mars Rovers Input<br>
+    <%= form.text_area :input %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
